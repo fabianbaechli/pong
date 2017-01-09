@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="groundPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GameController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <Pane layoutX="299.0" layoutY="50.0" prefHeight="335.0" prefWidth="2.0" style="-fx-background-color: white;">
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Pane>
+            <Ellipse fx:id="ball" fill="WHITE" layoutX="300.0" layoutY="200.0" radiusX="10.0" radiusY="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Pane fx:id="firstBat" layoutX="14.0" layoutY="100.0" prefHeight="200.0" prefWidth="8.0" style="-fx-background-color: black;" />
+            <Pane fx:id="secondBat" layoutX="578.0" layoutY="100.0" prefHeight="200.0" prefWidth="8.0" style="-fx-background-color: black;" />
+            <Label fx:id="firstPlayerWinCount" alignment="CENTER_RIGHT" layoutX="274.0" layoutY="14.0" prefHeight="25.0" prefWidth="20.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="298.0" layoutY="14.0" prefHeight="25.0" prefWidth="2.0" text=":" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="secondPlayerWinCount" layoutX="306.0" layoutY="14.0" prefHeight="25.0" prefWidth="20.0" text="0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="leftUsername" alignment="CENTER" layoutX="21.0" layoutY="14.0" prefHeight="26.0" prefWidth="146.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="rightUsername" alignment="CENTER" layoutX="433.0" layoutY="14.0" prefHeight="26.0" prefWidth="146.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

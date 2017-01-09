@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="331.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.startPageController">
+   <children>
+      <AnchorPane prefHeight="337.0" prefWidth="331.0">
+         <children>
+            <JFXTextField fx:id="usernameTextField" focusColor="#e91e63" labelFloat="true" layoutX="94.0" layoutY="30.0" promptText="Username" unFocusColor="#455a64">
+               <font>
+                  <Font name="Roboto Light" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="ipTextField" focusColor="#e91e63" labelFloat="true" layoutX="94.0" layoutY="80.0" promptText="IP Of Partner" unFocusColor="#455a64">
+               <font>
+                  <Font name="Roboto Light" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXColorPicker fx:id="userColor" editable="true" layoutX="118.0" layoutY="155.0" promptText="Chose Color" />
+            <JFXButton fx:id="connectButton" buttonType="RAISED" layoutX="130.0" layoutY="234.0" ripplerFill="WHITE" style="-fx-background-color: #E91E63;" text="Connect" textFill="WHITE" />
+            <Label layoutX="114.0" layoutY="130.0" text="Chose your color">
+               <font>
+                  <Font name="Roboto Light" size="13.0" />
+               </font>
+            </Label>
+            <JFXProgressBar fx:id="handshakeProgress" layoutX="62.0" layoutY="209.0" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
