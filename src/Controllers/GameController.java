@@ -52,7 +52,7 @@ public class GameController implements Initializable {
     public static double ySpeed;
     private double xSpeed = 1;
     private Difficulty gameDiff;
-    public static Timeline ballMovement;
+    private static Timeline ballMovement;
 
     private enum Difficulty {Hard, Medium, Easy}
 
